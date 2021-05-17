@@ -25,6 +25,23 @@ function App() {
 
   }, []); // <------ dependancy array
 
+  const handleUserInput = (event) => {
+    let inputValue = event.target.value;
+    setUserInput(inputValue);
+  };
+
+  const handleRestaurantAdd = (event) => {
+    event.preventDefault();
+
+    const dbRef = firebase.database().ref();
+    
+    dbRef.push(userInput);
+
+    console.log('restaurant added!');
+
+    setUserInput('');
+  }
+
   return (
     <div>
       <h1>Muck-it List</h1>
@@ -40,7 +57,7 @@ function App() {
           value={userInput}
           onChange={handleUserInput} 
         />
-        <button onClick={handleSubmitClick}>Add Restaurant</button>
+        <button onClick={handleRestaurantAdd}>Add Restaurant</button>
       </form>
     </div>
   );
