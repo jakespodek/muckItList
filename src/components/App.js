@@ -42,11 +42,19 @@ function App() {
     setUserInput('');
   }
 
+  const handleRestaurantDelete = (restaurant) => {
+    const dbRef = firebase.database().ref();
+
+    dbRef.child(restaurant.key).remove();
+
+    console.log(restaurant.name, 'removed!');
+  }
+
   return (
     <div>
       <h1>Muck-it List</h1>
       <h2>Muck Definition</h2>
-      <RestaurantContainer restaurantList={restaurants}/>
+      <RestaurantContainer restaurantList={restaurants} deleteRestaurant={handleRestaurantDelete} />
       <form action="submit">
         <label htmlFor="input" className="sr-only">
           Add a restaurant to your list

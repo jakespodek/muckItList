@@ -8,7 +8,7 @@ const RestaurantContainer = ({ restaurantList, deleteRestaurant }) => {
                         // add key!!!
                         <li className="restaurant" key={restaurant.key}>
                             <p>Restaurant: {restaurant.name}</p>
-                            <button>Remove from list x</button>
+                            <button onClick={() => deleteRestaurant(restaurant)}>Remove from list x</button>
                         </li>
                     )
                 })
