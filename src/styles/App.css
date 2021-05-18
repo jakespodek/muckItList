@@ -12,3 +12,8 @@ body {
     background: maroon;
     color: white;
 }
+
+img {
+    width: 40px;
+    height: auto;
+}

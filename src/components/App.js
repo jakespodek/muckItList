@@ -37,7 +37,7 @@ function App() {
     
     dbRef.push(userInput);
 
-    console.log('restaurant added!');
+    console.log(userInput, 'added!');
 
     setUserInput('');
   }
