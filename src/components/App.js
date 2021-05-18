@@ -53,7 +53,7 @@ function App() {
   return (
     <div>
       <h1>Muck-it List</h1>
-      <h2>Muck Definition</h2>
+      {/* <h2>Muck Definition</h2> */}
       <RestaurantContainer restaurantList={restaurants} deleteRestaurant={handleRestaurantDelete} />
       <form action="submit">
         <label htmlFor="input" className="sr-only">
