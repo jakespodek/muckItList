@@ -8,12 +8,39 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 /* ----------------------------- */
 
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 90%;
+}
+
 body {
     background: maroon;
     color: white;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+li,
+button {
+    font-size: 1.5rem;
+}
+
 img {
     width: 40px;
     height: auto;
+}
+
+form {
+    margin-top: 4rem;
 }

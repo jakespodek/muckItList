@@ -51,7 +51,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="wrapper">
       <h1>Muck-it List</h1>
       {/* <h2>Muck Definition</h2> */}
       <RestaurantContainer restaurantList={restaurants} deleteRestaurant={handleRestaurantDelete} />
