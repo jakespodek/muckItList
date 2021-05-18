@@ -10,7 +10,6 @@ const RestaurantContainer = ({ restaurantList, deleteRestaurant }) => {
             {
                 restaurantList.map((restaurant) => {
                     return (
-                        // add key!!!
                         <li className="restaurant" key={restaurant.key}>
                             <p>Restaurant: {restaurant.name}</p>
                             <button onClick={() => deleteRestaurant(restaurant)}>Remove from list x</button>
