@@ -32,8 +32,9 @@ h2 {
 }
 
 li,
-button {
-    font-size: 1.5rem;
+button,
+input {
+    font-size: 1.7rem;
 }
 
 img {
