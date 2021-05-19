@@ -1,5 +1,5 @@
 // RestaurantContainer.js
-import googleMapsIcon from '../assets/googleMapsIcon.png';
+import googleMaps from '../assets/googleMaps.svg.png';
 
 const RestaurantContainer = ({ restaurantList, deleteRestaurant }) => {
 
@@ -17,7 +17,7 @@ const RestaurantContainer = ({ restaurantList, deleteRestaurant }) => {
                             <button onClick={() => deleteRestaurant(restaurant)}>Remove from list x</button>
                             
                             <a href={urlPrefix + restaurant.name + '%2C%20' + restaurant.city} target="_blank" rel="noopener noreferrer" >
-                                <img src={googleMapsIcon} alt="Google Maps Icon" />
+                                <img src={googleMaps} alt="Google Maps Icon" />
                             </a>
                         </li>
                     )
