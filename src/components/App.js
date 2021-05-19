@@ -6,8 +6,6 @@ import RestaurantContainer from './RestaurantContainer.js'
 function App() {
 
   const [ restaurants, setRestaurants ] = useState([]);
-  // const [ userInput, setUserInput ] = useState('');
-
   const [ restaurantName, setRestaurantName ] = useState('');
   const [ restaurantCity, setRestaurantCity ] = useState('');
 
@@ -23,7 +21,6 @@ function App() {
       }
 
       setRestaurants(newDataArray);
-
     });
 
   }, []); // <------ dependancy array
@@ -37,29 +34,22 @@ function App() {
       city: restaurantCity
     }
 
-    // dbRef.push(newRestaurant);
-
-    // setRestaurantName('');
-    // setRestaurantCity('');
-
-    // inputValue.length && inputValue.length < 50 ? setUserInput(inputValue) : alert('Please try a shorter restaurant name');
+    const clearInputs = () => {
+      dbRef.push(newRestaurant);
+      setRestaurantName('');
+      setRestaurantCity('');
+    };
 
     restaurantName.length && restaurantCity.length
-      ? dbRef.push(newRestaurant)
+      ? clearInputs()
       : alert('Please include both the restaurant name and the city or town it is located in');
-
-    setRestaurantName('');
-    setRestaurantCity('');
-    
-  }
+  };
 
   const handleRestaurantDelete = (restaurant) => {
     const dbRef = firebase.database().ref();
-
+    
     dbRef.child(restaurant.key).remove();
-
-    console.log(restaurant.name, 'removed!');
-  }
+  };
 
   return (
     <div className="wrapper">
@@ -76,8 +66,8 @@ function App() {
           id="restaurantName"
           value={restaurantName}
           onChange={ (event) => setRestaurantName(event.target.value) }
-          minlength="0"
-          maxlength="50"
+          minLength="0"
+          maxLength="50"
         />
         <label htmlFor="restaurantCity" className="sr-only">
           Specify the city, town, or area that the restaurant is in
@@ -87,8 +77,8 @@ function App() {
           id="restaurantCity"
           value={restaurantCity}
           onChange={ (event) => setRestaurantCity(event.target.value) }
-          minlength="0"
-          maxlength="50"
+          minLength="0"
+          maxLength="50"
         />
         <button onClick={handleRestaurantAdd}>Add Restaurant</button>
       </form>
