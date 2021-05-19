@@ -21,6 +21,7 @@ html {
 body {
     background: maroon;
     color: white;
+    font-size: 1.8rem;
 }
 
 h1 {
@@ -31,11 +32,11 @@ h2 {
     font-size: 2rem;
 }
 
-li,
+/* li,
 button,
 input {
     font-size: 1.7rem;
-}
+} */
 
 img {
     width: 40px;
@@ -44,4 +45,9 @@ img {
 
 form {
     margin-top: 4rem;
+}
+
+input {
+    width: 300px;
+    border-radius: 5px;
 }
