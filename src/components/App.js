@@ -27,7 +27,7 @@ function App() {
 
   const handleUserInput = (event) => {
     let inputValue = event.target.value;
-    setUserInput(inputValue);
+    inputValue.length < 50 ? setUserInput(inputValue) : alert('Please try a shorter restaurant name');
   };
 
   const handleRestaurantAdd = (event) => {
