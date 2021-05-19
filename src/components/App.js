@@ -53,6 +53,7 @@ function App() {
   return (
     <div className="wrapper">
       <h1>Muck-it List</h1>
+      <h2>Make list of restaurants you would like to go to</h2>
       {/* <h2>Muck Definition</h2> */}
       <RestaurantContainer restaurantList={restaurants} deleteRestaurant={handleRestaurantDelete} />
       <form action="submit">
