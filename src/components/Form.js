@@ -39,7 +39,7 @@ const Form = () => {
                 value={restaurantName}
                 onChange={(event) => setRestaurantName(event.target.value)}
                 minLength="0"
-                maxLength="40"
+                maxLength="30"
                 placeholder="restaurant name"
             />
             <label htmlFor="restaurantCity" className="sr-only">
@@ -51,7 +51,7 @@ const Form = () => {
                 value={restaurantCity}
                 onChange={(event) => setRestaurantCity(event.target.value)}
                 minLength="0"
-                maxLength="40"
+                maxLength="30"
                 placeholder="restaurant location (e.g. toronto)"
             />
             <button onClick={handleRestaurantAdd}>Add Restaurant</button>
