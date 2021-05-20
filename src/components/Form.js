@@ -21,12 +21,6 @@ const Form = () => {
             dbRef.push(newRestaurant);
             setRestaurantName('');
             setRestaurantCity('');
-
-            const addAlert = document.createElement('p');
-            const alertText = document.createTextNode('Restaurant Added!');
-            addAlert.appendChild(alertText);
-            const form = document.querySelector('form');
-            form.appendChild(addAlert);
         };
 
         restaurantName.length && restaurantCity.length
@@ -46,7 +40,7 @@ const Form = () => {
                 onChange={(event) => setRestaurantName(event.target.value)}
                 minLength="0"
                 maxLength="40"
-                placeholder="name of restaurant"
+                placeholder="restaurant name"
             />
             <label htmlFor="restaurantCity" className="sr-only">
                 Specify the city, town, or area that the restaurant is in
