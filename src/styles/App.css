@@ -50,6 +50,7 @@ h1 {
     font-style: italic;
     text-shadow: -3px 3px dodgerblue;
     line-height: 0.5;
+    padding-left: 4px;
 }
 
 h2 {
@@ -91,10 +92,6 @@ ul {
     margin-bottom: 10rem;
 }
 
-ul {
-    padding: 0;
-}
-
 form {
     margin: 8rem 0;
 }
@@ -102,6 +99,10 @@ form {
 input {
     width: 300px;
     border-radius: 5px;
+}
+
+ul {
+    padding: 0;
 }
 
 li {
