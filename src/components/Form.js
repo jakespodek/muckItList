@@ -58,7 +58,7 @@ const Form = () => {
                 onChange={(event) => setRestaurantCity(event.target.value)}
                 minLength="0"
                 maxLength="40"
-                placeholder="location of restaurant (e.g. toronto)"
+                placeholder="restaurant location (e.g. toronto)"
             />
             <button onClick={handleRestaurantAdd}>Add Restaurant</button>
         </form>
