@@ -36,9 +36,10 @@ body {
 
 body {
     background: #6C1600;
-    color: #faebd7;
+    color: #FAEBD7;
     font-size: 1.8rem;
     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 /* TYPOGRAPHY */
@@ -54,7 +55,7 @@ h1 {
 
 h2 {
     font-size: 3rem;
-    text-shadow: -0.2rem 0.2rem dodgerblue;
+    text-shadow: -0.1rem 0.1rem dodgerblue;
 }
 
 h1,
@@ -73,7 +74,7 @@ span {
 
 a {
     text-decoration: none;
-    color: #faebd7;
+    color: #FAEBD7;
 }
 
 footer a:hover {
@@ -92,41 +93,67 @@ ul {
 }
 
 form {
-    margin: 5rem 0;
+    margin: 5rem 0 3rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 input {
-    width: 40%;
     width: calc(100% / 2 - 1.5rem);
-    border: 1px solid #faebd7;
+    border: 1px solid #FAEBD7;
     border-radius: 5px;
     background: #6C1600;
-    color: #faebd7;
+    color: #FAEBD7;
     font-family: 'Poppins', sans-serif;
     padding: 1rem;
-}
-
-::placeholder {
-    font-size: 1.4rem;
 }
 
 button {
-    background: #faebd7;
+    background: #FAEBD7;
     margin: 2rem auto;
     padding: 1rem;
+    border: 2px solid #FAEBD7;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 2px solid #FF3C38;
+    border: 2px solid #faEBD7;
 }
 
 form button {
     width: 50%;
 }
 
+form p {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    animation: fadeOut ease 1.5s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
 li button {
     width: 30%;
+    width: 5rem;
+    /* border: 1px solid #FAEBD7; */
+    border: 2px solid #FF3C38;
+    font-size: 2.5rem;
+    color: #FAEBD7;
+    background: #FF3C38;
 }
 
 ul {
@@ -135,7 +162,7 @@ ul {
 
 li {
     list-style: none;
-    border: 1px solid #faebd7;
+    border: 1px solid #FAEBD7;
     border-radius: 5px;
     display: flex;
     width: 100%;
@@ -166,6 +193,10 @@ footer {
 /* RESPONSIVENESS */
 
 @media (max-width: 865px) {
+    input {
+        width: 100%;
+        margin-top: 2rem;
+    }
     footer {
         height: 15rem;
     }

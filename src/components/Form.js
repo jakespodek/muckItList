@@ -9,6 +9,7 @@ const Form = () => {
     
     const handleRestaurantAdd = (event) => {
         event.preventDefault();
+
         const dbRef = firebase.database().ref();
 
         const newRestaurant = {
@@ -20,6 +21,12 @@ const Form = () => {
             dbRef.push(newRestaurant);
             setRestaurantName('');
             setRestaurantCity('');
+
+            const addAlert = document.createElement('p');
+            const alertText = document.createTextNode('Restaurant Added!');
+            addAlert.appendChild(alertText);
+            const form = document.querySelector('form');
+            form.appendChild(addAlert);
         };
 
         restaurantName.length && restaurantCity.length
@@ -38,7 +45,7 @@ const Form = () => {
                 value={restaurantName}
                 onChange={(event) => setRestaurantName(event.target.value)}
                 minLength="0"
-                maxLength="50"
+                maxLength="40"
                 placeholder="name of restaurant"
             />
             <label htmlFor="restaurantCity" className="sr-only">
@@ -50,7 +57,7 @@ const Form = () => {
                 value={restaurantCity}
                 onChange={(event) => setRestaurantCity(event.target.value)}
                 minLength="0"
-                maxLength="50"
+                maxLength="40"
                 placeholder="location of restaurant (e.g. toronto)"
             />
             <button onClick={handleRestaurantAdd}>Add Restaurant</button>
