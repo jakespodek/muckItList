@@ -3,7 +3,7 @@ const MuckDefinition = () => {
     return (
         <div className="definition">
             <p>muck · /mək/ · <span>verb</span></p>
-            <p>to eat voraciously; devour</p>
+            <p>to eat with enthusiasm; devour</p>
         </div>
     )
 }

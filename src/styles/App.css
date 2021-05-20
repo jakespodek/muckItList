@@ -185,10 +185,15 @@ footer {
 /* RESPONSIVENESS */
 
 @media (max-width: 865px) {
+    header {
+    margin-bottom: 4rem;
+    }
+
     input {
         width: 100%;
         margin-top: 2rem;
     }
+
     footer {
         height: 15rem;
     }
