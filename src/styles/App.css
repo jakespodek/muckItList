@@ -88,7 +88,7 @@ footer a:focus {
 
 header,
 ul {
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
 }
 
 form {
@@ -107,6 +107,10 @@ input {
     color: #faebd7;
     font-family: 'Poppins', sans-serif;
     padding: 1rem;
+}
+
+::placeholder {
+    font-size: 1.4rem;
 }
 
 button {
@@ -137,6 +141,13 @@ li {
     width: 100%;
     padding: 1rem 3rem;
     margin-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liText {
+    display: flex;
+    flex-direction: column;
 }
 
 img {
