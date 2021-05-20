@@ -20,18 +20,12 @@ body {
     position: relative;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
 .appComponent {
     min-height: 100vh;
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 10rem;
+    padding-bottom: 12rem;
 }
 
 .wrapper {
@@ -59,7 +53,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: -1px 1px dodgerblue;
 }
 
@@ -94,7 +88,7 @@ footer a:focus {
 
 header,
 ul {
-    margin-bottom: 7.5vh;
+    margin-bottom: 10rem;
 }
 
 ul {
@@ -125,15 +119,29 @@ img {
 }
 
 footer {
-    height: 10rem;
+    height: 12rem;
     text-align: center;
-    /* border: 1px solid white; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* RESPONSIVENESS */
 
+@media (max-width: 865px) {
+    footer {
+        height: 15rem;
+    }
+}
+
 @media (max-width: 500px) {
     h1 {
-        font-size: 6rem;
+        font-size: 5.5rem;
+    }
+}
+
+@media (max-width: 454px) {
+    footer {
+        height: 21rem;
     }
 }
