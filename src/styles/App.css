@@ -90,3 +90,11 @@ img {
     width: 40px;
     height: auto;
 }
+
+/* RESPONSIVENESS */
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
