@@ -1,9 +1,9 @@
 // MuckDefinition.js
 const MuckDefinition = () => {
     return (
-        <div>
-            <h3>muck · /mək/ · <span>verb</span></h3>
-            <p>To eat voraciously; devour</p>
+        <div className="definition">
+            <p>muck · /mək/ · <span>verb</span></p>
+            <p>to eat voraciously; devour</p>
         </div>
     )
 }

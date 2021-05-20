@@ -6,7 +6,7 @@ const RestaurantContainer = ({ restaurantList, deleteRestaurant }) => {
     const urlPrefix = 'https://www.google.com/maps/search/?api=1&query='
 
     return (
-        <ul className="restaurantContainer wrapper">
+        <ul className="restaurantContainer">
             {
                 restaurantList.map((restaurant) => {
                     return (

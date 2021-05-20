@@ -32,11 +32,18 @@ function App() {
 
   return (
     <div className="wrapper">
-      <h1>Muck-it List</h1>
-      <h2>for the restaurants you want to check out before you check out</h2>
-      <MuckDefinition />
-      <RestaurantContainer restaurantList={restaurants} deleteRestaurant={handleRestaurantDelete} />
-      <Form />
+      <header>
+        <h1>Muck-it List</h1>
+        <MuckDefinition />
+      </header>
+      <main>
+        <RestaurantContainer restaurantList={restaurants} deleteRestaurant={handleRestaurantDelete} />
+        <Form />
+      </main>
+      <footer>
+        <h2>For the restaurants you need to check out before checking out</h2>
+        <p>Created at Juno College</p>
+      </footer>
     </div>
   );
 };

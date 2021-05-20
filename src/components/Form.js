@@ -28,7 +28,7 @@ const Form = () => {
     };
 
     return (
-        <form action="submit">
+        <form action="submit" >
             <label htmlFor="restaurantName" className="sr-only">
                 Add a restaurant to your list
             </label>
