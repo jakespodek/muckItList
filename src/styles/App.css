@@ -87,13 +87,12 @@ footer a:focus {
 
 /* MISC. */
 
-header,
-ul {
-    margin-bottom: 8rem;
+header {
+    margin-bottom: 6rem;
 }
 
 form {
-    margin: 5rem 0 3rem;
+    margin: 4rem 0 3rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -150,6 +149,7 @@ ul {
     padding: 0;
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 8rem;
 }
 
 li {
