@@ -14,6 +14,26 @@ html {
     font-size: 62.5%;
 }
 
+html,
+body {
+    height: 100%;
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.appComponent {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 10rem;
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: 1300px;
@@ -57,6 +77,19 @@ span {
     font-style: italic;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:focus {
+    text-decoration: underline;
+}
+
 /* POSITIONING */
 
 header,
@@ -69,7 +102,7 @@ ul {
 }
 
 form {
-    margin-top: 4rem;
+    margin: 8rem 0;
 }
 
 input {
@@ -89,6 +122,12 @@ li {
 img {
     width: 40px;
     height: auto;
+}
+
+footer {
+    height: 10rem;
+    text-align: center;
+    /* border: 1px solid white; */
 }
 
 /* RESPONSIVENESS */

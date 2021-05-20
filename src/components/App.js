@@ -31,18 +31,18 @@ function App() {
   };
 
   return (
-    <div className="wrapper">
+    <div className="appComponent wrapper">
       <header>
         <h1>Muck-it List</h1>
         <MuckDefinition />
       </header>
       <main>
-        <RestaurantContainer restaurantList={restaurants} deleteRestaurant={handleRestaurantDelete} />
         <Form />
+        <RestaurantContainer restaurantList={restaurants} deleteRestaurant={handleRestaurantDelete} />
       </main>
       <footer>
         <h2>For the restaurants you need to check out before checking out</h2>
-        <p>Created at Juno College</p>
+        <p>Created by <a href="https://jakespodek.com/" target="_blank" rel="noopener noreferrer">Jake Spodek</a> at <a href="https://junocollege.com/" target="_blank" rel="noopener noreferrer">Juno College</a></p>
       </footer>
     </div>
   );
