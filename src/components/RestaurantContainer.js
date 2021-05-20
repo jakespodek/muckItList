@@ -6,13 +6,13 @@ const RestaurantContainer = ({ restaurantList, deleteRestaurant }) => {
     const urlPrefix = 'https://www.google.com/maps/search/?api=1&query='
 
     return (
-        <ul className="restaurantContainer">
+        <ul>
             {
                 restaurantList.map((restaurant) => {
                     return (
-                        <li className="restaurant" key={restaurant.key}>
+                        <li key={restaurant.key}>
                             <button onClick={() => deleteRestaurant(restaurant)}>𝗫</button>
-                            
+
                             <div className="liText">
                                 <p>{restaurant.name}</p>
                                 <p>{restaurant.city}</p>
