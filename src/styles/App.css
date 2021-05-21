@@ -51,7 +51,6 @@ h1 {
     text-shadow: -0.3rem 0.3rem dodgerblue;
     line-height: 0.5;
     padding-left: 0.4rem;
-    letter-spacing: 3rem;
 }
 
 h2 {
@@ -159,7 +158,7 @@ li {
     list-style: none;
     border: 1px solid #FAEBD7;
     border-radius: 5px;
-    width: 95%;
+    width: 90%;
     padding: 1rem 3rem;
     margin: 0 auto 2rem;
     display: flex;
@@ -176,7 +175,6 @@ li {
 
 .liText p {
     margin: 1.5rem;
-    /* word-break: break-all; */
 }
 
 img {
