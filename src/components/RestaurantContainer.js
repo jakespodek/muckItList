@@ -11,14 +11,14 @@ const RestaurantContainer = ({ restaurantList, deleteRestaurant }) => {
                 restaurantList.map((restaurant) => {
                     return (
                         <li key={restaurant.key}>
-                            <button onClick={() => deleteRestaurant(restaurant)}>𝗫</button>
+                            <button aria-label="delete" onClick={() => deleteRestaurant(restaurant)}>𝗫</button>
 
                             <div className="liText">
                                 <p>{restaurant.name}</p>
                                 <p>{restaurant.city}</p>
                             </div>
                             
-                            <a href={urlPrefix + restaurant.name + '%2C%20' + restaurant.city} target="_blank" rel="noopener noreferrer" >
+                            <a aria-label="link to restaurant's Google Maps page" href={urlPrefix + restaurant.name + '%2C%20' + restaurant.city} target="_blank" rel="noopener noreferrer" >
                                 <img src={googleMaps} alt="Google Maps Icon" />
                             </a>
                         </li>
